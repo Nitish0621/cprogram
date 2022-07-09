@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {float a,b,c,d,e,s;
+printf("Enter the sum of rupees\n");
+scanf("%f",&s);
+a=s/1;
+b=s/2;
+c=s/5;
+d=s/10;
+e=s/100;
+printf("smallest number of notes %f\n %f\n %f\n %f\n %f",a,b,c,d,e);
+    return 0;
+}
