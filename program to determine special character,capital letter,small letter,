@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    char c;
+    printf("enter the character\n");
+    scanf("%c",&c);
+    if(c>=65&&c<=90)
+    printf("%c is a capital letter",c);
+    if(c>=97&&c<=122)
+    printf("%c is a small letter",c);
+    if(c>=48&&c<=57)
+    printf("%c is a digit",c);
+    if((c>=0&&c<=47)||(c>=58&&c<=64)||(c>=91&&c<=96)||(c>=123&&c<=127))
+    printf("%c is special symbol",c);
+    return 0;
+}
