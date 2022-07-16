@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int days;
+    float fine;
+    printf("enter the number of days\n");
+    scanf("%d",&days);
+    if(days<=5)
+    {fine=0.5*days;
+    printf("fine is %f",fine);
+    }
+    else if(days>=6&&days<=10)
+    {fine=days*1;
+    printf("fine is %f",fine);
+    }
+    else if(days>10&&days<=30)
+    {fine=days*10;
+    printf("fine is %f",fine);
+    }
+    else if(days>30)
+    {
+    printf("membership will be cancelled");
+    }
+    return 0;
+}
