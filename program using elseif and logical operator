@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int hardness;
+    long tensilstrength;
+    float carboncontent;
+    printf("enter the hardness\n carboncontent\n tensilstrength\n");
+    scanf("%d%f%ld",&hardness,&carboncontent,&tensilstrength);
+    if(hardness>50&&carboncontent<0.7&&tensilstrength>5600)
+    printf("grade 10");
+    else if(hardness>50&&carboncontent<0.7)
+    printf("grade 9");
+    else if(carboncontent<0.7&&tensilstrength>5600)
+    printf("grade 8");
+    else if(hardness>50&&tensilstrength>5600)
+    printf("grade 7");
+    else if((hardness>50)||(carboncontent<0.7)||(tensilstrength>5600))
+    printf("grade 6");
+    else if(hardness<50&&carboncontent>0.7&&tensilstrength<5600)
+    printf("grade 5");
+    return 0;
