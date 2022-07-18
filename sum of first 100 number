@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int i,sum=0;
+    printf("sum of first 100 number\n");
+  i=1;
+  while(i<=100)
+{
+sum=sum+i;      
+i++;
+}
+printf("%d",sum);
+    return 0;
+}
