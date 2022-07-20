@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {int n,x,y,z;
+for(n=1;n<=500;n++)
+{y=0;
+z=n;
+    while(z!=0)
+    {
+    x=z%10;
+    y=y+x*x*x;
+    z=z/10;
+    }
+    if(y==n)
+    printf("%d is armstrong number\n",n);
+    
+}
+    return 0;
+}
