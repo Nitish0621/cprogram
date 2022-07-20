@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {int i,num;
+float f=1;
+
+printf("enter the number\n");
+scanf("%d",&num);
+for(i=1;i<=num;i++)
+{
+f=f*i;
+}
+printf("factorial is %.1f of %d",f,num);
+    
+    return 0;
+}
