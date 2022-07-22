@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {int num,x;
+for(num=1;num<=300;num++)
+{
+    x=2;
+    while(x<=num-1)
+    {
+    if(num%x==0)
+    break;
+    x++;
+    }
+ if(x==num)
+  printf(" %d ",num);
+}
+    return 0;
+}
