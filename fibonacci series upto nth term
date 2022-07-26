@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{int n,a=0,b=1,sum=0,y,i;
+printf("Enter the number till you want to print series\n");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+  {
+    a=b;
+    b=sum;
+    sum=a+b;
+    printf(" %d ",sum);
+  }
+    return 0;
+}
