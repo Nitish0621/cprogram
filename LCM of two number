@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{ int x,y,L;
+    printf("Enter Two Number\n");
+    scanf("%d%d",&x,&y);
+    for(L=x>y?x:y;L<=x*y;L++)
+    {
+       if(L%x==0 && L&y==0)
+          break;
+    }      
+    
+    printf("LCM of %d and %d is %d",x,y,L);
+
+    return 0;
