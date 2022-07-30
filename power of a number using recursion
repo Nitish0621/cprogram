@@ -1,0 +1,16 @@
+#include <stdio.h>
+int power(int ,int);
+int main() {
+int a,b,p;    
+printf("enter two number\n");
+scanf("%d%d",&a,&b);
+p=power(a,b);
+printf("answer is %d",p);
+    return 0;
+}
+int power(int x,int y)
+{
+    if(y==0)
+    return 1;
+    return x*power(x, y-1);
+}
