@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int num,i=0,num2;
+printf("Enter the integer\n");
+scanf("%d",&num);
+printf("Enter the number you want to check\n");
+scanf("%d",&num2);
+while(num>0)
+   {
+     if(num%10==num2)
+        i++;
+        num=num/10;
+   }
+   printf(" %d occur %d times",num2,i);
+    return 0;
+}
