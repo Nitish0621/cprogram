@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+   int num,num2=0,n;
+   printf("Enter the number\n");
+   scanf("%d",&num);
+  if(num==0)
+    num2=1;
+   
+   while(num>0)
+   {
+       n=num%10;
+       if(n==0)
+       n=1;
+       num=num/10;
+       num2=num2*10+n;
+   }
+   num=0;
+   while(num2>0)
+   {
+       int r=num2%10;
+           num=num*10+r;
+           num2=num2/10;
+   }
+   
+printf(" Number after replacing all 0 with 1 is %d",num);
+    return 0;
+}
